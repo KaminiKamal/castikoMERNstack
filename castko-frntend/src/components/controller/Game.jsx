@@ -27,6 +27,15 @@ class Game extends React.Component {
         const { game, score } = this.props;
         const { moveCards, turnCard } = this;
         console.log(score);
+        let style={
+          display: "none"
+        }
+        if(score===240 || score===220){
+          console.log("show button now");
+           style={
+            display: "inline"
+          }
+        }
         return (
             <div style={{
                 width: Dimensions.Game.width,
@@ -34,8 +43,13 @@ class Game extends React.Component {
                 backgroundColor: Colors.Game.backgroundColor,
                 padding: 10
             }}>
+            <div>
+              <button type="button" style={style}>RESTART</button>
+              <button type="button" style={style}>LOGOUT</button>
+
+              </div>
                 <div style={{display: 'flex', justifyContent: 'space-between'}}>
-                    <SmartDeck deck={game.DECK} turnCard={turnCard} />
+
                     <div style={{
                         width: 540,
                         display: 'flex',
@@ -79,7 +93,9 @@ class Game extends React.Component {
                         />
                     )
                 }
+
                 </div>
+
             </div>
         );
     }
