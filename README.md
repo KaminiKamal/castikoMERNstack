@@ -25,7 +25,7 @@ there may me version incompatibility issues while running npm install command
 ##Steps to use the project
 ```
 1. login using the username "kamini" and password "123456" (any hardcoded data since there is no register form).
-2. after successful login, the page will be redired to the game page.
+2. after successful login, the page will be redirected to the game page.
 3. you can play the game of cards from a shuffled deck (this is really interesting as the cards are shuffled randomly).
 4. you can resume the game once you logout.
 5. once all the available cards are put into the right box, you can RESTART the game.
