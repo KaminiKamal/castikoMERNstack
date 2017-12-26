@@ -20,7 +20,7 @@ React-deck-of-card-games features a suite of technologies for frontend developme
 $ npm install
 $ npm start
 $ open http://localhost:8080
-there may me version incompatibility issues which running npm install command
+there may me version incompatibility issues while running npm install command
 ```
 ##Steps to use the project
 ```
