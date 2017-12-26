@@ -14,17 +14,9 @@ import { DevTools, DebugPanel } from 'redux-devtools/lib/react';
 import SliderMonitor from 'redux-slider-monitor';
 import App from "./App.js";
 
-let cards = [];
-Object.keys(Suits).forEach(suit => {
-    Ranks.forEach(rank => {
-        cards.push({ rank, suit })
-    })
-})
 
 const finalCreateStore = compose(
-  devTools(),
-  persistState(window.location.href.match(/[?&]debug_session=([^&]+)\b/))
-)(createStore);
+  devTools())(createStore);
 const store = finalCreateStore(reducers);
 
 ReactDOM.render(

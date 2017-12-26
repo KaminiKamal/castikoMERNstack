@@ -7,8 +7,8 @@ class App extends Component {
   render() {
     return (
         <Router history={ browserHistory }>
-          <Route path={"/"} component={ Game } />
-          <Route path={"/Login"} component={Login} />
+          <Route path={"/game"} component={ Game } />
+          <Route path={"/"} component={ Login } />
         </Router>
     );
   }

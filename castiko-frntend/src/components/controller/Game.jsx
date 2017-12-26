@@ -68,7 +68,7 @@ class Game extends React.Component {
         let style={
           display: "none"
         }
-        if(score>=90){
+        if(score>=220){
           console.log("show button now");
            style={
             display: "inline"
@@ -122,7 +122,7 @@ class Game extends React.Component {
                     marginTop: 40
                 }}>
                 {
-                    range(0, 4).map(index =>
+                    range(0, 6).map(index =>
                         <SmartPile
                             cards={game.PILE[index]}
                             index={index}

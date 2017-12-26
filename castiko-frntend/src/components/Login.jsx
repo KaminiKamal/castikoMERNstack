@@ -1,12 +1,36 @@
 import React, { Component } from 'react';
-class Login extends Component{
-  render(){
-    return(
+// import Header from "./Header.jsx";
+import NavBar from "./NavBar.jsx";
+import DiaryBox from "./contents/InputBox.jsx";
+
+import '../App.css';
+
+class Login extends Component {
+  constructor(props)
+  {
+    super(props);
+    this.state =
+    {
+      responseObject: []
+    }
+  }
+
+  render() {
+    return (
       <div>
-      login pileTarget
+        <NavBar />
+        <div className="fixed-action-btn">
+    <a className="btn-floating btn-large red">
+      <i className="large material-icons">mode_edit</i>
+    </a>
+  </div>
+        <div style={{padding:"100px 50px 0px 50px"}}>
+        <DiaryBox />
+        </div>
       </div>
-    )
+    );
   }
 }
 
 export default Login;
+//export default FeedList;
