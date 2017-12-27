@@ -19,7 +19,9 @@ React-deck-of-card-games features a suite of technologies for frontend developme
 ```
 $ npm install
 $ npm start
-$ open http://localhost:8080
+$ open http://localhost:8080 (frontend)
+$ open http://localhost:3000 (backend)
+$ run mongodb
 there may me version incompatibility issues while running npm install command
 ```
 ##Steps to use the project
@@ -30,3 +32,4 @@ there may me version incompatibility issues while running npm install command
 4. you can resume the game once you logout.
 5. once all the available cards are put into the right box, you can RESTART the game.
 ```
+![Demo](demo.docx)
